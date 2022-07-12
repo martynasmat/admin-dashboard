@@ -5,73 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administrator Dashboard</title>
     <link href="./styles/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <aside class="sidebar">
-        <div class="sidebar-logo-wrapper">
-            <img class="dashboard-icon" href="./icons/" alt="dashboard-icon">
-            <p class="dashboard-main-text"></p>
-        </div>
-        <div class="sidebar-options-wrapper">
-            <div class="option-wrapper">
-                <img src="" alt="home-icon">
-                <p>Home</p>
+        <div class="sidebar-content">
+            <div class="sidebar-logo-wrapper">
+                <img class="dashboard-icon" src="./icons/server.svg" alt="dashboard-icon">
+                <p class="dashboard-main-text">DASHBOARD</p>
             </div>
-            <div class="option-wrapper">
-                <img src="" alt="profile-icon">
-                <p>Profile</p>
+            <div class="sidebar-options-wrapper">
+                <div class="option-wrapper">
+                    <img src="./icons/home.svg" alt="home-icon">
+                    <p>Home</p>
+                </div>
+                <div class="option-wrapper">
+                    <img src="./icons/user.svg" alt="profile-icon">
+                    <p>Profile</p>
+                </div>
+                <div class="option-wrapper">
+                    <img src="./icons/inbox.svg" alt="inbox-icon">
+                    <p>Inbox</p>
+                </div>
+                <div class="option-wrapper">
+                    <img src="./icons/clock.svg" alt="history-icon">
+                    <p>History</p>
+                </div>
+                <div class="option-wrapper">
+                    <img src="./icons/archive.svg" alt="tasks-icon">
+                    <p>Tasks</p>
+                </div>
+                <div class="option-wrapper">
+                    <img src="./icons/users.svg" alt="communities-icon">
+                    <p>Communities</p>
+                </div>
             </div>
-            <div class="option-wrapper">
-                <img src="" alt="messages-icon">
-                <p>Messages</p>
-            </div>
-            <div class="option-wrapper">
-                <img src="" alt="history-icon">
-                <p>History</p>
-            </div>
-            <div class="option-wrapper">
-                <img src="" alt="tasks-icon">
-                <p>Tasks</p>
-            </div>
-            <div class="option-wrapper">
-                <img src="" alt="communities-icon">
-                <p>Communities</p>
-            </div>
-        </div>
-        <div class="sidebar-options-wrapper">
-            <div class="option-wrapper">
-                <img src="" alt="settings-icon">
-                <p>Settings</p>
-            </div>
-            <div class="option-wrapper">
-                <img src="" alt="support-icon">
-                <p>Support</p>
-            </div>
-            <div class="option-wrapper">
-                <img src="" alt="privacy-icon">
-                <p>Privacy</p>
+            <div class="sidebar-options-wrapper">
+                <div class="option-wrapper">
+                    <img src="./icons/settings.svg" alt="settings-icon">
+                    <p>Settings</p>
+                </div>
+                <div class="option-wrapper">
+                    <img src="./icons/help-circle.svg" alt="support-icon">
+                    <p>Support</p>
+                </div>
+                <div class="option-wrapper">
+                    <img src="./icons/lock.svg" alt="privacy-icon">
+                    <p>Privacy</p>
+                </div>
             </div>
         </div>
     </aside>
     <header class="header-top">
         <div class="header-top-content">
-            <img src="" alt="search-icon">
-            <input type="search" class="search-field">
-            <img src="" alt="notifications-icon">
-            <div class="user-profile-picture 1"></div>
-            <p class="user-name 1">John Doe</p>
+            <div class="first-half">
+                <img src="./icons/search.svg" alt="search-icon" class="search-icon">
+                <input type="search" class="search-field" placeholder="Search">
+            </div>
+            <div class="second-half">
+                <img src="./icons/bell.svg" alt="notifications-icon" class="notifications-icon">
+                <div class="user-profile-picture-one"></div>
+                <p class="user-name-one">John Doe</p>
+            </div>
         </div>
     </header>
     <header class="header-bottom">
         <div class="header-bottom-content">
-            <div class="user-profile-picture 2"></div>
-            <div class="greeting">
-                <p class="greeting-text">Welcome,</p>
-                <p class="user-name 2">John Doe</p>
+            <div class="first-half">
+                <div class="user-profile-picture-two"></div>
+                <div class="greeting-wrapper">
+                    <p class="greeting-text">Welcome,</p>
+                    <p class="user-name-two">John Doe</p>
+                </div>
             </div>
-            <button class="btn new">New</button>
-            <button class="btn upload">Upload</button>
-            <button class="btn share">Share</button>
+            <div class="second-half">
+                <button class="btn new">New</button>
+                <button class="btn upload">Upload</button>
+                <button class="btn share">Share</button>
+            </div>
         </div>
     </header>
     <main class="main-area">

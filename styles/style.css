@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    font-family: 'Albert Sans', sans-serif;
 }
 
 /* BODY */
@@ -13,8 +14,45 @@ body {
 /* SIDEBAR */
 
 .sidebar {
+    padding: 50px 50px 50px 50px;
     background-color: antiquewhite;
     grid-area: 1 / 1 / 4 / 2;
+}
+
+.sidebar-content {
+    height: 60%;
+    display: grid;
+    gap: 60px;
+    align-items: start;
+}
+
+.sidebar-logo-wrapper, .option-wrapper {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    align-items: center;
+    gap: 30px;
+    transition: 0.25s;
+}
+
+.dashboard-main-text {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.sidebar-options-wrapper {
+    display: grid;
+    gap: 5px;
+}
+
+.option-wrapper {
+    padding: 10px 0 10px 0;
+    border-radius: 10px;
+}
+
+.option-wrapper:hover {
+    background-color: rgba(0, 0, 0, 0.144);
+    padding-left: 20px;
+    cursor: pointer;
 }
 
 /* TOP HEADER */
@@ -22,6 +60,69 @@ body {
 .header-top {
     background-color: beige;
     grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.header-top-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+.user-profile-picture-one {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.first-half {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    justify-self: start;
+}
+
+.search-field {
+    width: 600px;
+    justify-self: start;
+    margin: none;
+    border-radius: 20px;
+    height: 25px;
+    padding: 10px;
+}
+
+.second-half {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    justify-self: end;
+}
+
+.user-name-one {
+    justify-self: start;
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.notifications-icon, .search-icon {
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.notifications-icon:hover, .search-icon:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 /* BOTTOM HEADER */
@@ -29,7 +130,45 @@ body {
 .header-bottom {
     background-color: blanchedalmond;
     grid-area: 2 / 2 / 3 / 3;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
 }
+
+.header-bottom-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+.user-profile-picture-two {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.user-name-two {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 30px;
+    margin-left: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
 
 /* MAIN AREA */
 
