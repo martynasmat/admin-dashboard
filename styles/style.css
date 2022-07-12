@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+}
+
+/* BODY */
+
+body {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content min-content 1fr;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    background-color: antiquewhite;
+    grid-area: 1 / 1 / 4 / 2;
+}
+
+/* TOP HEADER */
+
+.header-top {
+    background-color: beige;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+/* BOTTOM HEADER */
+
+.header-bottom {
+    background-color: blanchedalmond;
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+/* MAIN AREA */
+
+.main-area {
+    background-color: burlywood;
+    grid-area: 3 / 2 / 4 / 3;
+}
